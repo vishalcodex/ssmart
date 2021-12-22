@@ -210,6 +210,7 @@
                         android:hint="@string/state"
                         android:importantForAutofill="no"
                         android:inputType="text"
+                        android:text="महाराष्ट्र"
                         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -227,6 +228,7 @@
                         android:hint="@string/country"
                         android:importantForAutofill="no"
                         android:inputType="text"
+                        android:text="भारत"
                         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
                 </com.google.android.material.textfield.TextInputLayout>
 

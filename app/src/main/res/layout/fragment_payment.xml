@@ -186,6 +186,19 @@
                     android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/_13ssp" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_14sdp"
+                    android:textSize="12dp"
+                    android:visibility="visible"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:background="@color/blue"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:text="कृपया खालील वर्तुळावर क्लिक करा.."/>
+
                 <RadioGroup
                     android:id="@+id/lytPayment"
                     android:layout_width="match_parent"
@@ -200,7 +213,7 @@
                         android:button="@drawable/ic_radio_button"
                         android:drawableEnd="@drawable/ic_cod"
                         android:drawablePadding="@dimen/_10sdp"
-                        android:layoutDirection="rtl"
+                        android:layoutDirection="ltr"
                         android:padding="@dimen/_5sdp"
                         android:tag="@string/codpaytype"
                         android:text="@string/cod_pay"
@@ -319,6 +332,7 @@
                         android:textSize="@dimen/_12sdp"
                         android:visibility="gone" />
                 </RadioGroup>
+0
             </LinearLayout>
 
             <com.facebook.shimmer.ShimmerFrameLayout

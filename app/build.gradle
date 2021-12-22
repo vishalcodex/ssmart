@@ -4,15 +4,19 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "wrteam.ekart.shop"
+        applicationId "com.codex.goldengalaxy"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0.1"
+        versionCode 4
+        versionName "1.3"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
         useLibrary 'org.apache.http.legacy'
         proguardFiles
+    }
+
+    task wrapper(type: Wrapper){
+        gradleVersion = '4.1.2'
     }
 
     compileOptions {
@@ -30,6 +34,7 @@ android {
 
 
 dependencies {
+//    implementation 'com.facebook.android:audience-network-sdk:6.+'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
@@ -110,6 +115,7 @@ dependencies {
 
     //Guide Showcase
     implementation 'com.github.mreram:showcaseview:1.2.0'
+    implementation 'com.google.firebase:firebase-ads:20.2.0'
 }
 apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.google.firebase.crashlytics'
